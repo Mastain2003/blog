@@ -301,7 +301,7 @@ function addAjaxEventHandlers() {
 }
 function checkcooki() {
 	USERNAME = getCooki("username");
-	if(USERNAME == "") {
+	/*if(USERNAME == "") {
 		USERNAME = prompt("Please Enter Your name");
 		while( !USERNAME || USERNAME.trim() == "") {
 			USERNAME = prompt("Your Name is required for Your better experience.<br/>Please Enter Your Name");
@@ -312,7 +312,7 @@ function checkcooki() {
 	}
 	else{
 		customAlert("<b>Hi " + USERNAME + ",</b><br/>Welcome once again in my Room.<br/>Room will be best visible in Chrome Desktop/Laptop.<br/>Please switch on the light to view and also remember to switch off all the lights before leaving my room.<br/><span style='color:green;'><b>SAVE ENERGY SAVE FUTURE</b></span>");
-	}
+	}*/
 	document.getElementById("visitorNo").firstElementChild.querySelector("span").textContent = USERNAME.trim();
 	var lightSwitch = document.getElementById("switch");
 	lightSwitch.style.display = "block";
